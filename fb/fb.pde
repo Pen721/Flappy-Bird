@@ -351,11 +351,16 @@ void display(){
      //Game page
   
   int Gamepage() {
-    print(b.score);
   closest = findclose();
   int a11 = 0, b11 = 0, c11 = 0, d11 =0;
   int m = millis();
   image(bg, 0, 0, 1000, 1000);
+  noStroke();
+     fill(255,255, 255);
+    rect(20,20,50,50);
+    fill(0,0,0);
+    textSize(20);
+    text(b.score, 45, 45);
   //pipes
   s.display(pip);
    s.move();
